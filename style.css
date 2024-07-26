@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    /* background-image: url(Hero-bg.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    background-color:transparent;
+    box-shadow: 3px 3px 5px aqua;
+    backdrop-filter: blur(2px);
+    padding: 0rem 2rem;
+    
+}
+.nav-menu{
+    display: flex;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  
+}
+nav li{
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+nav a{
+    padding: 0rem 2rem;
+    height: 60%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: .4s;
+}
+nav a:hover{
+    background-color: aqua;
+    color: white;
+}
+nav li:first-child{
+    margin-right: auto; 
+    font-weight: 700;   
+}
+nav li:last-child{
+    display: flex;
+}
+.brand a{
+    color: aqua;
+    font-size: 2rem;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -5px 0px 5px aqua;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+
+/* Mobile device */
+@media screen and (max-width:576px) {
+    .nav-menu{
+        display: none;
+    }
+    nav{
+        padding: 0rem 0rem;
+    }
+  
+}
